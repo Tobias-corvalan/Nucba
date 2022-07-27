@@ -1,0 +1,46 @@
+/*Estos son selectores de etiquetas*/
+/*
+    Jerarquia de estilos:
+        -atributo style
+        -estilos del selector con ID
+        -Estilos del selector con clase y pseudoclase
+        -Estilos del selector por etiquetas(h1,p,etc)
+*/
+h1{
+    color: red;
+}
+p{
+    color:  fuchsia;
+}
+
+/*Selector universal, aplica a todos los elementos html*/
+/*
+*{
+    border: 1px solid;
+}
+*/
+/*Como "linkear" un id*/
+#titulo-principal{
+    color: aqua;
+    text-align: center;
+    background-color: red;
+   
+    
+}
+/*Como "linkear" una class*/
+.parrafo{
+    color: white;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202206/0300/E2vZwVaDJbhLZpJo7Q10IyYo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+ul
+{
+    list-style: none;
+}
