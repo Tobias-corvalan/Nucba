@@ -39,12 +39,14 @@ h1,h2
     border-bottom: 10px solid black;
     border-right: 10px solid black;
     height: 33%;
+    background-color: white;
 }
 .izq-inferior
 {
     position: relative;
     border-right: 10px solid black;
     height: 203px;
+    background-color: white;
 }
 .caja-dos
 {
