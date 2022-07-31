@@ -1,0 +1,278 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body
+{
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+h1,h2
+{
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+}
+
+
+
+.caja-principal
+{
+    margin-left: 200px ;
+    margin-top: 25px ;
+    height: 600px;
+    width: 1000px;
+}
+.caja-uno
+{
+    position: relative;
+    height: 600px;
+    width: 75px;
+}
+.izq-superior,.izq-centro
+{
+    position: relative;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    height: 33%;
+}
+.izq-inferior
+{
+    position: relative;
+    border-right: 10px solid black;
+    height: 203px;
+}
+.caja-dos
+{
+    position: relative;
+    bottom: 601px;
+    left: 75px ;
+    width: 850px;
+    height: 600px;
+    margin-right: 0px;
+    
+}
+.caja-superior
+{
+    position: relative;
+    background-color: blueviolet;
+    height: 33%;
+}
+.superior-izq
+{
+    background-color:yellow;
+    position: relative;
+    width: 10%;
+    height: 100%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.superior-1
+{
+    position: relative;
+    background-color: blue;
+    bottom: 100%;
+    left: 85px;
+    width: 30%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    height: 100%;
+}
+.superior-2
+{
+    position: relative;
+    background-color: red;
+    bottom: 200%;
+    left: 40%;
+    width: 50%;
+    height: 100%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.superior-der
+{
+    position: relative;
+    background-color: yellow;
+    bottom: 300%;
+    left: 90%;
+    width: 10%;
+    height: 100%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+
+.caja-centro
+{
+    position: relative;
+    height: 50%;
+}
+.centro-superior-izq
+{
+    position: relative;
+    background-color: white;
+    width: 10%;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+    height: 199px;
+}
+.centro-superior-1
+{
+    position: relative;
+    background-color: white;
+    bottom: 199px;
+    left: 10%;
+    width: 30%;
+    height: 199px ;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-superior-2
+{
+    position: relative;
+    bottom: 398px;
+    background-color: white;
+    left: 40%;
+    width: 10%;
+    height: 199px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-superior-3
+{
+    position: relative;
+    bottom: 597px;
+    left: 50%;
+    background-color:blue;
+    width: 40%;
+    height: 199px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-superior-der
+{
+    position: relative;
+    background-color: red;
+    bottom: 796px;
+    left: 90%;
+    width: 10%;
+    height: 199px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-inferior-izq
+{
+    position: relative;
+    bottom: 796px;
+    background-color: white;
+    width: 10%;
+    height: 101px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-inferior-1
+{
+    position: relative;
+    bottom: 897px;
+    background-color: red;
+    left: 10%;
+    width: 40%;
+    height: 101px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-inferior-2
+{
+    position: relative;
+    bottom: 998px;
+    background-color: white;
+    left: 50%;
+    width: 40%;
+    height: 101px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.centro-inferior-der
+{
+    position: relative;
+    bottom: 1099px;
+    left: 90%;
+    background-color: yellow;
+    width: 10%;
+    height: 101px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.caja-inferior
+{
+    position: relative;
+    background-color: red;
+    height: 102px;
+}
+.inferior-izq
+{
+    position: relative;
+    width: 10%;
+    background-color: blue;
+    height: 102px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.inferior-centro
+{
+    position: relative;
+    bottom: 102px;
+    left: 10%;
+    background-color: yellow;
+    width: 40%;
+    height: 102px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+}
+.inferior-der
+{
+    position: relative;
+    bottom: 204px;
+    background-color: white;
+    left: 50%;
+    width: 50%;
+    height: 102px;
+    border-bottom: 10px solid black;
+    border-right: 10px solid black;
+
+}
+.caja-tres
+{
+    position: relative;
+    bottom: 1201px;
+    left: 915px;
+    background-color: aqua;
+    height: 100%;
+    width: 10%;
+}
+.der-superior
+{
+    position: relative;
+    background-color: white;
+    height: 33%;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+}
+.der-centro
+{
+    position: relative;
+    background-color: white;
+    height: 50%;
+    border-bottom: 10px solid black;
+    border-left: 10px solid black;
+}
+.der-inferior
+{
+    position: relative;
+    background-color: white;
+    height: 102px;
+    border-left: 10px solid black;
+}
