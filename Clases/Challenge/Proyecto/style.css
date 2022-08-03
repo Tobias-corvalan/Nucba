@@ -40,12 +40,15 @@ li{
 }
 a
 {
-    background-color:#FDE74C;
-    padding-top: 25px;
-    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FDE74C;
     height: 70px;
     width: 150px;
+    border-radius: 40px;
     text-decoration: none;
+    color: black;
 }
 
 a:hover
