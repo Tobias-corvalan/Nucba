@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    text-decoration: none;
 }
 body
 {
@@ -15,10 +14,7 @@ body
     background-color: #F9C846;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-
-    
-    
+    flex-wrap: wrap;   
 }
 .logo
 {
@@ -33,13 +29,12 @@ body
     align-items: center;
     gap: 20px;
     padding-right: 20px;
-    list-style: none;
-    
-    
+    list-style:none; 
 }
 li{
    display: flex; 
    text-align: center;
+   text-decoration: none;
 }
 a
 {
