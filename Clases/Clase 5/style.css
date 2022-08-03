@@ -1,0 +1,76 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Flex va en el contenedor padre*/
+.row
+{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.caja-flex
+{
+    display: flex;
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+    border-radius: 1em;
+    justify-content: center;
+    align-items: center;/*va al contrario de row(horizontal), los centra vertical*/
+}
+
+.row-reverse
+{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.column
+{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.column-reverse
+{
+    background-color:coral;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.wrap/*agrega espacio si es necesario*/
+{
+    background-color:coral;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 350px;
+}
+.no-wrap/*No agrega espacio y modifica la caja para ajustar al tamaño de la caja padre*/
+{
+    background-color:coral;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    gap: 10px;
+    width: 200px;
+}
+.flex-flow/*junta flex direction y flex-wrap en una sola*/
+{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: antiquewhite;
+}
