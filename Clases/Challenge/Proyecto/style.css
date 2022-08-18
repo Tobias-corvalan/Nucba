@@ -1,25 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+
+:root
+{
+    --background-navbar: #F9C846;
+    --background-body: #F96E46;
+    --background-a: #FDE74C;
+}
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-body
-{
-    font-family: 'Permanent Marker', serif;
-    background-color: #F96E46;
-}
-
 .container
 {
-    background-color: #F9C846;
+    background-color:var(--background-navbar);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;  
+    position: fixed;
+    top: 0;
+    width: 100%;
     
 }
 .logo
 {
-    height: 100px;
+    height: 90px;
     margin-left: 30px;
 
 }
@@ -28,6 +36,9 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 800;
+    /*font-family: 'Permanent Marker', serif;*/
+    font-family: 'Rubik Marker Hatch', cursive;
 }
 
 .navbar-lista
@@ -35,29 +46,131 @@ body
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-right: 20px;
+    margin-right: 30px;
     list-style:none; 
     
 }
-li{
+.navbar-lista li{
    display: flex; 
    text-align: center;
    
 }
-a
+.navbar-lista a
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FDE74C;
-    height: 70px;
+    background-color:var(--background-a);
+    height: 60px;
     width: 150px;
     border-radius: 40px;
     text-decoration: none;
     color: black;
 }
 
-a:hover
+.navbar-lista a:hover
 {
-    background-color: #E3655B;
+    /*background-color: #E3655B;*/
+    background-color: #00E8FC;
+}
+main
+{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-body);
+    
+}
+.portada
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.portada-info img{
+    height: 40px;
+    width: 40px;
+}
+.portada-img img{
+    height: 520px;  
+    border-radius: 15px;
+}
+.portada-info
+{
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.portada-info h2
+{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: 'Silkscreen', cursive;
+}
+.portada-info p
+{
+    /*font-family: 'Rubik Iso', cursive;*/
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
+.diviser
+{
+    border: 3px #59e800;
+    border-style:ridge;
+}
+.portada-img
+{   
+    padding: 20px;
+    margin-top: 10px;
+}
+.link-redes
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.link-redes a
+{
+    padding: 10px 70px;
+    background-color: #FDE74C;
+    border-radius: 15px;
+}
+.link-redes a:first-child,
+.link-redes a:last-child
+{
+    background-color: #00E8FC;
+}
+.portada-producto
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
+    height: 400px;
+}
+.portada-producto h2
+{
+    font-family: 'Silkscreen', cursive;
+    margin-left: 35px;
+    font-size: 40px;
+    width: 50%;
+    color: #59e800;
+    text-decoration: underline;
+}
+.producto-info 
+{
+    
+    width: 50%;
+    margin-right: 5px;
+    color:#59e800;
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-weight: 700;
+    font-size: 20px;
+   
 }
