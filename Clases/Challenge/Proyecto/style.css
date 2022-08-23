@@ -155,6 +155,7 @@ main
     margin-top: 50px;
     background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
     height: 400px;
+    max-width: none;
     animation: Fondo 20s infinite linear;
 }
 @keyframes Fondo {
@@ -165,16 +166,16 @@ main
         background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
     }
     34%{
-        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2016/06/dscf4810-2.jpg);
+        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf4822.jpg);
     }
     66%{
-        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2016/06/dscf4810-2.jpg);
+        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf4822.jpg);
     }
     67%{
-        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/demente-copia.jpg);
+        background: no-repeat center/100% url(https://conexionshow.com.ar/wp-content/uploads/2021/08/unnamed-3.jpg);
     }
     100%{
-        background: no-repeat center/100% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/demente-copia.jpg);   
+        background: no-repeat center/100% url(https://conexionshow.com.ar/wp-content/uploads/2021/08/unnamed-3.jpg);   
     }   
 }
 
@@ -184,7 +185,8 @@ main
     margin-left: 40px;
     font-size: 40px;
     width: 50%;
-    color: #59e800;
+    /*color: #59e800;*/
+    color: #FFFFFF;
     text-decoration: underline;
 }
 .producto-info 
@@ -192,9 +194,12 @@ main
     
     width: 50%;
     margin-right: 5px;
-    color:#59e800;
+    text-align: center;
+    /*color: #59e800;*/
+    color: #FFFFFF;
+    border-radius: 15px;
     font-family: 'Rubik Marker Hatch', cursive;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 25px;
    
 }
