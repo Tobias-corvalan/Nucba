@@ -1,0 +1,152 @@
+@media (max-width: 992px)
+{
+    .navbar
+    {
+        gap: 10px;
+    }
+    .navbar-lista
+    {
+        position: absolute;
+        top: 94px;
+        left: 5%;
+        right: 5%;
+        width: 90%;
+        flex-direction: column;
+        background: linear-gradient(var(--background-navbar),#f9b246,#f99b46,var(--background-body));
+        border: 2px solid black;
+        border-top: none;
+        padding: 20px 0px;
+        display: none;
+    }
+    .navbar-lista a
+    {
+        background-color: transparent;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .navbar-lista a:hover
+    {
+       background-color: transparent;
+       text-decoration: underline;
+    }
+    .menu-label img
+    {
+        display: flex;
+        width: 40px;
+    }
+    .menu-label
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FDE74C;
+        height: 60px;
+        width: 150px;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+    .menu-label:hover
+    {
+        background-color: #00E8FC;
+    }
+    #menu-toggle:checked + .navbar-lista
+    {
+        display: flex;
+    }
+    .portada
+    {
+        flex-direction: column;
+        padding: 40px;
+        
+    }
+    .portada-info 
+    {
+        width: 80%;
+        text-align: center;
+    }
+    .portada-img 
+    {
+       display: none;
+    }
+    .portada-producto
+    {
+        height: 100%;
+        padding: 40px;
+    }
+    .buttons-productos
+    {
+        width: 70%;
+    }
+
+    .ubi
+    {
+        display: none;
+    }
+    .locales
+    {
+        margin-left: 80px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px){
+
+    .portada-info
+    {
+        width: 100%;
+        gap: 30px;
+    }
+    .portada-info h2
+    {
+        font-size: 50px;
+    }
+    .link-redes a
+    {
+        padding: 10px 50px;
+    }
+    .portada-producto
+    {
+        background-image: url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
+        width: 100%;
+        animation: Fondo 20s infinite linear;
+    }
+    @keyframes Fondo {
+        0%{
+            background: no-repeat center/360% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
+        }
+        33%{
+            background: no-repeat center/345% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
+        }
+        34%{
+            background: no-repeat center/350% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf4822.jpg);
+        }
+        66%{
+            background: no-repeat center/345% url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf4822.jpg);
+        }
+        67%{
+            background: no-repeat center/300% url(https://conexionshow.com.ar/wp-content/uploads/2021/08/unnamed-3.jpg);
+        }
+        100%{
+            background: no-repeat center/300% url(https://conexionshow.com.ar/wp-content/uploads/2021/08/unnamed-3.jpg);   
+        }   
+    }
+    .portada-producto h2
+    {
+        font-size: 25px;
+        
+    }
+    .info p
+    {
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .buttons-productos
+    {
+        justify-content: center;
+    }
+    .button
+    {
+        width: 150px;
+    }
+}

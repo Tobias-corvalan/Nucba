@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&family=Fira+Sans&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mediaqueries.css">
     <title>Lading Page</title>
 </head>
 <body>
@@ -18,12 +19,86 @@
             <img src="./assets/burger-logo_1366-144-removebg-preview.png" alt="logo" class="logo">
         </div>
         <nav class ="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <img src="./assets/menu.png" alt="">
+            </label>
+            <input type="checkbox" name="" id="menu-toggle">
             <ul class="navbar-lista">
                 <li><a href="#">INICIO</a></li>
-                <li><a href="#">PRODUCTOS</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
                 <li><a href="#">TAKE AWAY</a></li>
-                <li><a href="#">CONTACTANOS</a></li>
+                <li><a href="#contacto">CONTACTANOS</a></li>
             </ul>
+            
+            <label for="carrito" class="container-carrito">
+                <img src="./assets/carro-de-la-carretilla.png" alt="">
+            </label>
+            <input type="checkbox" name="" id="carrito">
+            
+            <div class="lista-cart">
+                <h2>Lista carrito</h2>
+
+                <div class="item-burger">
+                    <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="burger-info">
+                        <h3>Chesse burger</h3>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                        <span>$800</span>
+                    </div>
+                    <div class="burger-handler">
+                        <span class="decrementar">-</span>
+                        <p class="cantidad">1</p>
+                        <span class="incrementar">+</span>
+                    </div>
+                </div>
+
+                <div class="item-burger">
+                    <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="burger-info">
+                        <h3>Chesse burger</h3>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                        <span>$800</span>
+                    </div>
+                    <div class="burger-handler">
+                        <span class="decrementar">-</span>
+                        <p class="cantidad">1</p>
+                        <span class="incrementar">+</span>
+                    </div>
+                </div>
+
+                <div class="item-burger">
+                    <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="burger-info">
+                        <h3>Chesse burger</h3>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                        <span>$800</span>
+                    </div>
+                    <div class="burger-handler">
+                        <span class="decrementar">-</span>
+                        <p class="cantidad">1</p>
+                        <span class="incrementar">+</span>
+                    </div>
+                </div>
+                <div class="container-opciones">
+                    <form action="">
+                            <div class="take-away">
+                                <label for="take-away" class="opcion">Take Away</label>
+                                <input type="radio" name="opciones" id="take-away">
+                            </div>
+                            <div class="envio">
+                                <label for="envio">Envio</label>
+                                <input type="radio" name="opciones" id="envio">
+                            </div>   
+                    </form>    
+                </div>
+                <div class="total-compra">
+                    <p>Total:</p>
+                    <span>$2400</span>
+                    <div class="comprar">
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,18 +119,102 @@
         </section>
         <section class="portada-producto">
             <h2>Productos llenos de magia</h2>
-            <div class="producto-info">
+            <div class="info">
                 <p>En Burger-Fire no copiamos una hamburguesa, la reinventamos. Desarrollamos una receta exclusiva, utilizando un blend de 3 cortes distintos de carne 100% vacuna proveniente de los mejores campos del pais. Y un pan casero especialmente desarrollado por un productor local para nosotros.</p>
             </div>
         </section>
-        <section class="producto">
-            <h2>Productos</h2>
+        <section class="productos" id="productos">
+            <div class="top-product">
+                <h2>Productos</h2>
+                <span class="diviser-2"></span>
+            </div>
+            <div class="buttons-productos">
+                <a href="#" class="button active"><img src="./assets/hamburguesa-con-queso.png" alt=""></a>
+                <a href="#" class="button"><img src="./assets/papas-fritas.png" alt=""></a>
+                <a href="#" class="button"><img src="./assets/pancho.png" alt=""></a>
+                <a href="#" class="button"><img src="./assets/ensalada.png" alt=""></a>
+                <a href="#" class="button"><img src="./assets/helado.png" alt=""></a>
+                <a href="#" class="button"><img src="./assets/refresco.png" alt=""></a>
+            </div>
+
             <div class="container-producto">
                 <div class="producto">
-                    
+                     <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="producto-info">
+                        <h4>Cheese Burger</h4>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                    </div>
+                    <div class="producto-bottom">
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                        <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="producto-info">
+                        <h4>Cheese Burger</h4>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                    </div>
+                    <div class="producto-bottom">
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <img src="https://www.theburgercompany.com.ar/uploads/1_Cheese_Burger_A.jpg" alt="">
+                    <div class="producto-info">
+                        <h4>Cheese Burger</h4>
+                        <p>160 grs. de carne, lechuga, Cheddar y tomate.</p>
+                    </div>
+                    <div class="producto-bottom">
+                        <button>Agregar al carrito</button>
+                    </div>
+            </div>
+            <span class="diviser-3"></span>
+        </section> 
+        <section class="contacto" id="contacto">
+            <h2>Contactanos</h2>
+            <div class="datos">
+                <div class="locales">
+                    <div class="local-1">
+                        <h3>Buenos Aires,Quilmes</h3>
+                        <span><img src="./assets/marcador-de-posicion.png" alt=""> Colon 220</span> 
+                         <span><img src="./assets/gmail.png" alt=""> Burgerfire@hotmail.com</span>
+                        <span><img src="./assets/llamada.png" alt=""> 1125650866</span>
+                        <p><img src="./assets/reloj.png" alt=""> 12:00 a 22:00 lunes a sabado</p>
+                    </div>
+                    <div class="local-1">
+                        <h3>Buenos Aires,Quilmes</h3>
+                        <span><img src="./assets/marcador-de-posicion.png" alt=""> Colon 220</span> 
+                        <span><img src="./assets/gmail.png" alt=""> Burgerfire@hotmail.com</span>
+                        <span><img src="./assets/llamada.png" alt=""> 1125650866</span>
+                        <p><img src="./assets/reloj.png" alt=""> 12:00 a 22:00 lunes a sabado</p>
+                    </div>
+                    <div class="local-1">
+                        <h3>Buenos Aires,Quilmes</h3>
+                        <span><img src="./assets/marcador-de-posicion.png" alt=""> Colon 220</span> 
+                        <span><img src="./assets/gmail.png" alt=""> Burgerfire@hotmail.com</span>
+                        <span><img src="./assets/llamada.png" alt=""> 1125650866</span>
+                        <p><img src="./assets/reloj.png" alt=""> 12:00 a 22:00 lunes a sabado</p>
+                    </div>
+                    <div class="local-1">
+                        <h3>Buenos Aires,Quilmes</h3>
+                        <p><img src="./assets/marcador-de-posicion.png" alt=""> Colon 220</p> 
+                        <p><img src="./assets/gmail.png" alt=""> Burgerfire@hotmail.com</p>
+                        <p><img src="./assets/llamada.png" alt=""> 1125650866</p>
+                        <p><img src="./assets/reloj.png" alt=""> 12:00 a 22:00 lunes a sabado</p>
+                    </div>
+                </div>
+                <div class="ubi">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22058.875986853625!2d-58.26963606708241!3d-34.728591220258814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e159ec3b983%3A0xff4f83a1db8e2d4e!2sPerez%20H.%20Quilmes!5e0!3m2!1ses-419!2sar!4v1661557076873!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+            <span class="diviser-4"></span>
+            <img src="./assets/burger-logo_1366-144-removebg-preview.png" alt="">
+            <p>Hecho por Tobias Corvalan</p>
+    </footer>
 </body>
 </html>
