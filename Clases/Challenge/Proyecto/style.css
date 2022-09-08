@@ -24,9 +24,7 @@
     top: 0;
     width: 100%;
     box-shadow: -1px 2px 10px black;
-    
 
-    
 }
 .logo
 {
@@ -490,14 +488,12 @@ main
     background: linear-gradient(var(--background-navbar),#f9b246,#f99b46,var(--background-body));
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     font-family: 'Silkscreen', cursive;
-    padding: 20px;
 }
-.contacto h2
-{
-    text-align: center;
-}
+
 .locales img
 {
     width: 20px;
@@ -505,18 +501,22 @@ main
 .datos
 {
     display: flex;
-    justify-content: space-between;
+    padding: 10px;
 }
 .locales
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 }
 .local-1
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     background-color: #5efc8d;
     padding: 20px;
     gap: 10px;
@@ -543,6 +543,11 @@ footer p
 {
     border: 4px outset #59e800;
     width: 100%;
+}
+.ubi iframe
+{
+    width: 550px;
+    height: 500px;
 }
 
 

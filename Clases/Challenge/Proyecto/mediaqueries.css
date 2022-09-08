@@ -77,11 +77,6 @@
     {
         width: 70%;
     }
-
-    .ubi
-    {
-        display: none;
-    }
     .locales
     {
         margin-left: 80px;
@@ -91,24 +86,26 @@
 
 @media (max-width: 576px){
 
+
     .portada-info
     {
-        width: 100%;
-        gap: 30px;
+       width: 100%;
+        gap: 20px;
     }
     .portada-info h2
     {
-        font-size: 50px;
+        font-size: 30px;
     }
     .link-redes a
     {
-        padding: 10px 40px;
+        padding: 10px 20px;
     }
     .portada-producto
     {
         background-image: url(https://www.perez-h.com/newsite/wp-content/uploads/2018/02/dscf6520-copia.jpg);
         width: 100%;
         animation: Fondo 20s infinite linear;
+        animation-play-state: paused;
     }
     @keyframes Fondo {
         0%{
@@ -158,18 +155,17 @@
     {
         width: 120px;
     }
-    .locales
+    .datos
     {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-    }
-    .local-1{
-        margin-right: 100px;
-    }    
-    .ubi
+        gap: 20px;
+    }  
+    .ubi iframe
     {
-        display: none;
+        width: 300px;
+        height: 300px;
     }
 }
