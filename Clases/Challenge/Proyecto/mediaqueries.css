@@ -86,6 +86,12 @@
 
 @media (max-width: 576px){
 
+    .locales
+    {
+        justify-content: center;
+        padding-right: 75px;
+     
+    }
 
     .portada-info
     {
