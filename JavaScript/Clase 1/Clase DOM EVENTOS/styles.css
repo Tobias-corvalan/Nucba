@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.form input, button{
+    padding: 10px 50px;
+    border-radius: 20px;
+    
+}
+
+button{
+    background-color: yellow;
+}
+
+.error-container{
+    background-color: red;
+    padding: 10px;
+    border-radius: 15px;
+    display: none;
+}
