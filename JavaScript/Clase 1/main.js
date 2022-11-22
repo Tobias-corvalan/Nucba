@@ -1,4 +1,4 @@
-/*
+
 function numeros_pares(lista, indice, tamaño){
 
     if(indice === tamaño){
@@ -32,10 +32,10 @@ class  Pizza{
 
 let cantidad_pizza = parseInt(prompt("Ingrese la cantidad de pizzas que va a necesitar: "));
 let lista_pizza = [];
-
+id = 0
 for(let i = 0; i < cantidad_pizza; i++){
 
-    let id = parseInt(prompt("Ingrese id: "));
+    id++
     let nom = prompt("Ingrese nombre: ");
     let  precio = parseInt(prompt("Ingrese precio: "));
     let cantidad_ingre = parseInt(prompt("Ingrese cant ingre: "));
@@ -55,44 +55,37 @@ for(let i = 0; i < cantidad_pizza; i++){
 
 
 //a)  Las pizzas que tengan un id impar.
-for(let i = 0; i < lista_pizza.length; i++){
-    let pizza_1 = lista_pizza[i];
-    if(pizza_1.id % 2 === 1){
-        console.log(`La Pizza ${pizza_1.nombre} tiene id impar`);
-    }
-}
+const pizza_id = lista_pizza.filter(pizza => pizza.id % 2 !== 0);
+console.log("Las pizzas con id impar son las siguientes:")
+pizza_id.forEach(pizza => console.log(`${pizza.nombre}`))
 
 
 //b) ¿Hay alguna pizza que valga menos de $600?
-for(let i = 0; i < lista_pizza.length; i++){
+/*for(let i = 0; i < lista_pizza.length; i++){
     let pizza_1 = lista_pizza[i];
     if(pizza_1.precio <= 600){
         console.log(`La Pizza ${pizza_1.nombre} vale menos de $600`);
     }
+}*/
+const pizza_menor = pizza => pizza.precio < 600;
+if(lista_pizza.some(pizza_menor)){
+    console.log("Hay pizzas menores a $600")
+}else{
+    console.log("No hay pizzas menores a $600")
 }
 
 //c) El nombre de cada pizza con su respectivo precio.
-for(let i = 0; i < lista_pizza.length; i++){
-    
-    let pizza_1 = lista_pizza[i];
-    console.log(`${pizza_1.nombre} \nEl precio es: $${pizza_1.precio}`);
-    
-}
+lista_pizza.forEach(pizza => console.log(`La pizza ${pizza.nombre} tiene un precio de $${pizza.precio}`));
 
 //d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza actual).
-for(let i = 0; i < lista_pizza.length; i++){
-    
-    let pizza_1 = lista_pizza[i];
-    console.log(`${pizza_1.nombre}\nTiene los siguientes ingredientes`)
-    for(let j = 0; j < pizza_1.ingrediente.length; j++){
 
-        console.log(pizza_1.ingrediente[j]);
+lista_pizza.forEach(pizza => {
 
-    }
-    
-}
+    console.log(`La pizza ${pizza.nombre} tiene los siguientes ingredientes:`)
+    pizza.ingrediente.forEach(ing => console.log(`${ing}`));
+})
 //Todo esto conveniente hacerlo con metodos
-*/
+
 
 //DOM
 
